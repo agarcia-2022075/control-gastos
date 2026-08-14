@@ -1,0 +1,22 @@
+<div class="app-layout">
+  <header class="app-header">
+    <div class="header-container">
+      <a routerLink="/" class="brand">
+        <span class="brand-icon">💰</span>
+        <span class="brand-name">control-gastos</span>
+      </a>
+      <nav class="nav-links">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
+        <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer class="app-footer">
+    <p>&copy; 2026 control-gastos. Fase 2 — Arquitectura Base Frontend</p>
+  </footer>
+</div>
